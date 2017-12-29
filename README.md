@@ -5,13 +5,21 @@ The program is menu-based allowing for flexible and dynamic analysis that is use
 
 # Project Files
 Main.py - Contains the main menus and serves as backbone of desired analysis
+
 analysisFunctions.py - This module actually performs all of the calculations
+
 journalReading.py - Looks at all stored runs and turns them from a multi-line mess into a easy to use DataFrame
+
 fileFunction.py - To make things simpler for some functions, this module deals with anything that writes or reads in a file. More useful in previous versions of the program, before Pandas was used
+
 Marketplace Prices.xlsx - Contains values for every piece of loot, this file, when saved as a CSV, is how the program values locations and their loot wealth
+
 marketPlace.csv - This file is made from the Excel document
+
 Run Analysis.bat - Allows user to open a console and access all functionality without needing to write any code
+
 runHunts.csv - Created by the program to store the data from the runs in. Will automatically be populated in program from previous data creation unless Create Data is selected in Main Menu
+
 Runs Folder - Individual text documents containing journal entries from every hunt stored. Read the Data section to understand more in depth 
 
 # Storing the Data
