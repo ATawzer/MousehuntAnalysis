@@ -1,0 +1,16 @@
+Trap: Trap
+Base: Base	
+Charm: Charm or None
+Cheese: Cheese
+Lucky Golden Shield: True or False
+Cost: Hunt expense
+
+For usage:
+1. Name file whatever you want, something intuitive for use in program. Place it in the Runs Folder
+2. Copy and Paste journal entries off of internet. Start with the time on the first entry and copy through the end of the final entry
+3. Make sure to fill out the information at the top of the run. If you change these parameters make a new run file
+4. Run the Program! It'll do the rest
+
+*note* as of version 1.0.0 you must delete progress reports from entries before running analysis!
+ 
+

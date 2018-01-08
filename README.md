@@ -4,7 +4,9 @@ This console-based program will analyze runs from the online game Mousehunt and 
 
 # Main Menu
 1. Create Run Data – will read in all stored runs and update their values in the runHunts.csv file allowing the program to update its analysis from any newly stored hunts
-2. 
+2. Single Parameter Analysis – breaks down analysis by either a run-name, a location name or a cheese name. Each option allows the user to type help to see all of the available analysis combination options
+3. Collective Analysis – prints out the entire DataFrame for really basic run stats comparison for everything logged in the Runs folder. Later version will contain a better comparison menu
+4. Special Analysis Menu – contains special analysis for specific things in the game, currently just does Winter Hunt 2017 Golems. Will eventually include things like Daily Reward, King’s Rewards and potentially marketplace updating from logged transactions
 
 
 # Putting in Journal Data
