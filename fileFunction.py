@@ -3,7 +3,7 @@ import pandas as pd
 def readFile(filename):
 
     #based on run information we will grab the hunts
-    fname = "D:\Python Projects\Mousehunt Analytics\Runs" + "\\" + filename
+    fname = f"Runs/{filename}"
     f = open(fname, "r")
     flines = []
 

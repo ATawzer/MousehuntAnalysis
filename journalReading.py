@@ -499,7 +499,7 @@ def createData():
     runNames = []
     dfArray = []
 
-    runNames.extend(os.listdir("D:\Python Projects\Mousehunt Analytics\Runs"))
+    runNames.extend(os.listdir("Runs/"))
 
     for i in range(0, len(runNames)):
         dfArray.append(doJournalProcessing(runNames[i]))
@@ -516,7 +516,7 @@ def createData():
     NewDf = cleanLoot(NewDf)
 
     print("New Data has been succesfully created and stored.")
-    NewDf.to_csv("D:\Python Projects\Mousehunt Analytics\\runHunts.csv")
+    NewDf.to_csv("runHunts.csv")
 
 def cleanLoot(df):
 
@@ -566,8 +566,10 @@ def cleanLoot(df):
                 # remove s
                 if name[-1:] == 's':
                     name = name[:-1]
+                elif name[-3:] == 'ves':
+                    name = name[:-3] + 'f'
 
-                row[name] = indLoot[0]
+                row[name] = indLoot[0] if len(indLoot) > 0 else 'Unknown'
 
 
 

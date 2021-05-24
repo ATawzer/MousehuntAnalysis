@@ -32,7 +32,7 @@ def singleAnalysisMenu():
 def Main():
 
     user = 0
-    allEntryDF = pd.read_csv("D:\Python Projects\Mousehunt Analytics\\runHunts.csv")
+    allEntryDF = pd.read_csv("runHunts.csv")
     allRunDF = allEntryDF[allEntryDF.isHunt == 1]
     miscEntryDF = allEntryDF[allEntryDF.isHunt == 0]
 
@@ -46,7 +46,7 @@ def Main():
         if user == "1":
             # Make new data and then update its value
             journalReading.createData()
-            allEntryDF = pd.read_csv("D:\Python Projects\Mousehunt Analytics\\runHunts.csv")
+            allEntryDF = pd.read_csv("runHunts.csv")
             allRunDF = allEntryDF[allEntryDF.isHunt == 1]
             miscEntryDF = allEntryDF[allEntryDF.isHunt == 0]
 
